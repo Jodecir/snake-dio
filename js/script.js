@@ -13,12 +13,12 @@ let food = {
 	y: Math.floor(Math.random() * 15 + 1) * box
 }
 
-function criarBG(){
+function backgroundCreate(){
 	context.fillStyle = "lightgreen";
 	context.fillRect(0, 0, 16 * box, 16 * box);
 }
 
-function criarCobrinha(){
+function createHead(){
 	for (i=0; i < snake.length; i++) {
 			context.fillStyle = "green";
 			context.fillRect(snake[i].x, snake[i].y, box, box);
@@ -52,8 +52,9 @@ function iniciarJogo(){
 		}
 	}
 
-	criarBG();
-	criarCobrinha();
+	backgroundCreate();
+	createHead();
+	drawFood();
 
 	let snakeX = snake[0].x;
 	let snakeY = snake[0].y;
