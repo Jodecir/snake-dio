@@ -1,6 +1,6 @@
 body {
   font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  height: 95vh;
+  height: 545px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,7 +22,7 @@ canvas{
 }
 
 ul {
-	margin: 40px 0 20px 0;
+	margin: 40px 15px 20px 0;
 	padding: 0;
 	display: flex;
 	border-bottom: solid 10px #ffffff;
