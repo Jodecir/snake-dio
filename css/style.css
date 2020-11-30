@@ -1,7 +1,6 @@
-body{
-  margin-top: 25px;
+body {
+  font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   height: 95vh;
-  width:  95;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,4 +13,48 @@ body{
   align-items: center;
   justify-content: center;
   width: 50%;
+  min-height: 30rem;
+}
+
+ul {
+	margin: 40px 0 20px 0;
+	padding: 0;
+	display: flex;
+	border-bottom: solid 10px white;
+}
+
+ ul li {
+	background-color: rgb(44, 139, 44);
+  list-style: none;
+  font-size: 26px;
+	width: 0;
+	height: 0;
+	margin: 0 20px;
+	animation: jumping 1s linear infinite;
+}
+
+@keyframes jumping {
+	0% { transform: translateY(0); }
+	50% { transform: translateY(-10px); }
+	100% { transform: translateY(0); }
+}
+
+ ul li:nth-child(1) {
+	animation-delay: 0.05s;
+}
+
+ ul li:nth-child(2) {
+	animation-delay: 0.2s;
+}
+
+ ul li:nth-child(3) {
+	animation-delay: 0.3s;
+}
+
+ ul li:nth-child(4) {
+	animation-delay: 0.4s;
+}
+
+ ul li:nth-child(5) {
+	animation-delay: 0.5s;
 }
