@@ -5,7 +5,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  color: rgb(44, 139, 44);
+  color: #2f6f37	
 }
 
 .screen {
@@ -16,15 +16,19 @@ body {
   min-height: 30rem;
 }
 
+canvas{
+	background:black;
+	border: 5px double #2f6f37;
+}
+
 ul {
 	margin: 40px 0 20px 0;
 	padding: 0;
 	display: flex;
-	border-bottom: solid 10px white;
+	border-bottom: solid 10px #ffffff;
 }
 
  ul li {
-	background-color: rgb(44, 139, 44);
   list-style: none;
   font-size: 26px;
 	width: 0;
