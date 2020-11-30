@@ -1,7 +1,7 @@
 let canvas = document.getElementById("snake");
-let tailSize = document.getElementById("tailSize");
 let context = canvas.getContext("2d");
 let box = 32;
+let tailSize = 1;
 
 let snake = [];
 snake[0] = {
@@ -72,8 +72,8 @@ function iniciarJogo(){
 	else {
 		food.x = Math.floor(Math.random() * 15 + 1) * box;
 		food.y = Math.floor(Math.random() * 15 + 1) * box; 
-		console.log(this.tailSize)
-		this.tailSize.innerText=parseInt(this.tailSize.innerText)+1
+		tailSize++;
+		document.getElementById("tailSize").innerHTML = "Metros da Pitón: " + tailSize;
 	}
 
 	let newHead = {
