@@ -1,4 +1,5 @@
 let canvas = document.getElementById("snake");
+let tailSize = document.getElementById("tailSize");
 let context = canvas.getContext("2d");
 let box = 32;
 
@@ -48,7 +49,7 @@ function iniciarJogo(){
 	for(i=1; i < snake.length; i++){
 		if (snake[0].x == snake[i].x && snake[0].y == snake[i].y){
 				clearInterval(jogo);
-				alert('Fim de jogo :(');        
+				alert('Game Over :(');        
 		}
 	}
 
@@ -71,6 +72,8 @@ function iniciarJogo(){
 	else {
 		food.x = Math.floor(Math.random() * 15 + 1) * box;
 		food.y = Math.floor(Math.random() * 15 + 1) * box; 
+		console.log(this.tailSize)
+		this.tailSize.innerText=parseInt(this.tailSize.innerText)+1
 	}
 
 	let newHead = {
