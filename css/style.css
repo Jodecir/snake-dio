@@ -1,17 +1,23 @@
-body {
-  font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  height: 545px;
+body {	
   display: flex;
-  justify-content: center;
+	justify-content: center;
   align-items: center;
-  flex-direction: column;
+  font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   color: #2f6f37	
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+	width: 60%;
+	height: 600px;
 }
 
 .screen {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: center; /* horizontal */
+  justify-content: space-around; /* vertical */
   width: 50%;
   min-height: 30rem;
 }
@@ -21,8 +27,27 @@ canvas{
 	border: 5px double #2f6f37;
 }
 
+.hud {
+  display: flex;
+  align-items: center;
+	justify-content: center;
+  flex-direction: column;
+  width: 50%;
+  background-color: #ffffff;
+  padding: 1.3rem 0;
+}
+
+.group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 1.3rem 0;
+}
+
 ul {
-	margin: 40px 15px 20px 0;
+	margin: 10px 15px 30px 0;
 	padding: 0;
 	display: flex;
 	border-bottom: solid 10px #ffffff;

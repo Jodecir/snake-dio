@@ -1,0 +1,28 @@
+
+@media (max-width: 1024px) {
+  .container {
+      width: 90%;
+  }
+}
+
+@media (max-width: 650px) {
+  body {
+      background-color: #ffffff;
+  }
+
+  .container {
+      width: 90%;
+  }
+
+  .hud {
+      display: none;
+  }
+
+  .screen {
+      width: 100%;
+  }
+  
+  .group {
+      border: 1px solid transparent;
+  }
+}
