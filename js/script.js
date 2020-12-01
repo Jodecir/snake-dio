@@ -8,9 +8,13 @@ snake[0] = {
 	x: 8 * box,
 	y: 8 * box
 }
-
 let direction = "right";
+
 let apple = {
+	x: Math.floor(Math.random() * 15 + 1) * box,
+	y: Math.floor(Math.random() * 15 + 1) * box
+}
+let orange = {
 	x: Math.floor(Math.random() * 15 + 1) * box,
 	y: Math.floor(Math.random() * 15 + 1) * box
 }
@@ -30,6 +34,11 @@ function createHead(){
 function drawApple(){
 	context.fillStyle = "red";
 	context.fillRect(apple.x, apple.y, box, box);
+}
+
+function drawOrange(){
+	context.fillStyle = "orange";
+	context.fillRect(orange.x, orange.y, box, box);
 }
 
 document.addEventListener('keydown', update);
@@ -54,9 +63,17 @@ function startGame(){
 		}
 	}
 
+	for(i=0; i < snake.length; i++){
+			if (tailSize <= 0){
+				clearInterval(jogo);
+				alert('Game Over :(');        
+		}
+	}
+
 	backgroundCreate();
 	createHead();
 	drawApple();
+	drawOrange();
 
 	let snakeX = snake[0].x;
 	let snakeY = snake[0].y;
@@ -67,9 +84,17 @@ function startGame(){
 	if(direction == "down") snakeY += box;
 
 	if(snakeX != apple.x || snakeY != apple.y){
-		snake.pop();
+			snake.pop();
+			if(snakeX != orange.x || snakeY != orange.y){			
+			}
+			else { 
+				orange.x = Math.floor(Math.random() * 15 + 1) * box;
+				orange.y = Math.floor(Math.random() * 15 + 1) * box; 
+				snake.pop();
+				tailSize--;
+				document.getElementById("tailSize").innerHTML = "Metros da Pitón: " + tailSize;
+			}
 		}
-	
 	else {
 		apple.x = Math.floor(Math.random() * 15 + 1) * box;
 		apple.y = Math.floor(Math.random() * 15 + 1) * box; 
