@@ -19,14 +19,6 @@
 				<canvas id="snake" width="480" height="480"></canvas>
 			</div>
 			<div class="hud">
-				<div class="dark-checkbox">
-					<input type="checkbox" class="checkbox" id="chk"/>
-					<label class="label" for="chk">
-						<i class="fas fa-moon"></i>
-						<i class="fas fa-sun"></i>
-						<div class="ball"></div>
-					</label>
-				</div>
 				<div class="group">
 					<ul>
 						<li>S</li>
@@ -38,6 +30,17 @@
 				</div>
 				<div class="group">
 					<h3 id="tailSize">Metros da Pitón: 1</h3>
+					<form>
+						<button action="startGame()" id="restart"><i class="fas fa-redo"></i></button>
+					</form>
+					<div class="dark-checkbox">
+						<input type="checkbox" class="checkbox" id="chk"/>
+						<label class="label" for="chk">
+							<i class="fas fa-moon"></i>
+							<i class="fas fa-sun"></i>
+							<div class="ball"></div>
+						</label>
+					</div>
 				</div>
 			</div>
 		</div>

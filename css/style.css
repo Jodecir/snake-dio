@@ -87,6 +87,21 @@ ul {
 	animation-delay: 0.5s;
 }
 
+#restart {
+	display: flex;
+	align-items: center;
+	background-color: #111;
+	border-radius: 10px;
+	cursor: pointer;
+	height: 32px;
+	width: 28px;
+	transform: scale(1.5);
+}
+
+.fa-redo {
+	color: #2f6f37;
+}
+
 /* Dark Mode Feature */ 
 
 .dark-checkbox {
@@ -103,14 +118,14 @@ ul {
 }
 
 .label {
-	background-color: #111;
-	border-radius: 50px;
-	cursor: pointer;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 5px;
+	background-color: #111;
+	border-radius: 50px;
+	cursor: pointer;
 	position: relative;
+	padding: 5px;
 	height: 16px;
 	width: 40px;
 	transform: scale(1.5);
