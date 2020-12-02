@@ -3,6 +3,8 @@ let context = canvas.getContext("2d");
 let box = 32;
 let tailSize = 1;
 
+let par = 2;
+
 let snake = [];
 snake[0] = {
 	x: 8 * box,
@@ -15,6 +17,11 @@ let apple = {
 	y: Math.floor(Math.random() * 15 + 1) * box
 }
 let orange = {
+	x: Math.floor(Math.random() * 15 + 1) * box,
+	y: Math.floor(Math.random() * 15 + 1) * box
+}
+
+let banana = {
 	x: Math.floor(Math.random() * 15 + 1) * box,
 	y: Math.floor(Math.random() * 15 + 1) * box
 }
@@ -39,6 +46,11 @@ function drawApple(){
 function drawOrange(){
 	context.fillStyle = "orange";
 	context.fillRect(orange.x, orange.y, box, box);
+}
+
+function drawBanana(){
+	context.fillStyle = "yellow";
+	context.fillRect(banana.x, banana.y, box, box);
 }
 
 document.addEventListener('keydown', update);
@@ -74,6 +86,7 @@ function startGame(){
 	createHead();
 	drawApple();
 	drawOrange();
+	drawBanana();
 
 	let snakeX = snake[0].x;
 	let snakeY = snake[0].y;
@@ -85,21 +98,43 @@ function startGame(){
 
 	if(snakeX != apple.x || snakeY != apple.y){
 			snake.pop();
-			if(snakeX != orange.x || snakeY != orange.y){			
+		if(snakeX != orange.x || snakeY != orange.y){			
+			if(snakeX != banana.x || snakeY != banana.y){	
 			}
-			else { 
-				orange.x = Math.floor(Math.random() * 15 + 1) * box;
-				orange.y = Math.floor(Math.random() * 15 + 1) * box; 
-				snake.pop();
-				tailSize--;
+			else {
+				snake.push(8);
+				banana.x = Math.floor(Math.random() * 15 + 1) * box;
+				banana.y = Math.floor(Math.random() * 15 + 1) * box; 
+				tailSize++;
+				snake.push(8);
+				tailSize++;
 				document.getElementById("tailSize").innerHTML = "Metros da Pitón: " + tailSize;
 			}
+		}	
+		else { 
+			orange.x = Math.floor(Math.random() * 15 + 1) * box;
+			orange.y = Math.floor(Math.random() * 15 + 1) * box; 
+			snake.pop();
+			tailSize--;
+			document.getElementById("tailSize").innerHTML = "Metros da Pitón: " + tailSize;
 		}
+	}
 	else {
 		apple.x = Math.floor(Math.random() * 15 + 1) * box;
 		apple.y = Math.floor(Math.random() * 15 + 1) * box; 
 		tailSize++;
 		document.getElementById("tailSize").innerHTML = "Metros da Pitón: " + tailSize;
+	}
+
+	if(tailSize == par) {
+		banana.x = Math.floor(Math.random() * 15 + 1) * box;
+		banana.y = Math.floor(Math.random() * 15 + 1) * box; 
+		par = par + 2;	
+	} if(tailSize == par) {
+		banana.x = Math.floor(Math.random() * 15 + 1) * box;
+		banana.y = Math.floor(Math.random() * 15 + 1) * box; 
+		par = par + 2;	
+	} else {	
 	}
 
 	let newHead = {
