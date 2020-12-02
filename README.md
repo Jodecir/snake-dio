@@ -10,8 +10,8 @@
 
 * [Dark Mode](https://www.w3schools.com/Jsref/met_element_addeventlistener.asp)
 * [Contador do Tamanho da Cobra](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/pop)
-* [Fruta Redutora de Cauda](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/pop)
 * [Restart Game Button](https://www.w3schools.com/jsref/event_onclick.asp)
+* [Duas Novas Frutas](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/push)
 
 ### Ferramentas Utilizadas:
 
