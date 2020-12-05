@@ -5,6 +5,8 @@ let tailSize = 1;
 
 let par = 2;
 
+let appleBiteSound=document.getElementById("appleBiteSound");
+
 let snake = [];
 snake[0] = {
 	x: 8 * box,
@@ -16,6 +18,7 @@ let apple = {
 	x: Math.floor(Math.random() * 15 + 1) * box,
 	y: Math.floor(Math.random() * 15 + 1) * box
 }
+
 let orange = {
 	x: Math.floor(Math.random() * 15 + 1) * box,
 	y: Math.floor(Math.random() * 15 + 1) * box
@@ -33,8 +36,8 @@ function backgroundCreate(){
 
 function createHead(){
 	for (i=0; i < snake.length; i++) {
-			context.fillStyle = "green";
-			context.fillRect(snake[i].x, snake[i].y, box, box);
+		context.fillStyle = "green";
+		context.fillRect(snake[i].x, snake[i].y, box, box);
 	}
 }
 
@@ -120,6 +123,7 @@ function startGame(){
 		}
 	}
 	else {
+		appleBiteSound.play();
 		apple.x = Math.floor(Math.random() * 15 + 1) * box;
 		apple.y = Math.floor(Math.random() * 15 + 1) * box; 
 		tailSize++;
@@ -127,10 +131,6 @@ function startGame(){
 	}
 
 	if(tailSize == par) {
-		banana.x = Math.floor(Math.random() * 15 + 1) * box;
-		banana.y = Math.floor(Math.random() * 15 + 1) * box; 
-		par = par + 2;	
-	} if(tailSize == par) {
 		banana.x = Math.floor(Math.random() * 15 + 1) * box;
 		banana.y = Math.floor(Math.random() * 15 + 1) * box; 
 		par = par + 2;	
