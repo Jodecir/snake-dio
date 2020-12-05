@@ -73,15 +73,15 @@ function startGame(){
 
 	for(i=1; i < snake.length; i++){
 		if (snake[0].x == snake[i].x && snake[0].y == snake[i].y){
-				clearInterval(jogo);
-				alert('Você se mordeu e acabou morto com o próprio veneno X_X');        
+			clearInterval(jogo);
+			alert('Você se mordeu e acabou morto com o próprio veneno X_X');        
 		}
 	}
 
 	for(i=0; i < snake.length; i++){
-			if (tailSize <= 0){
-				clearInterval(jogo);
-				alert('Laranjas fazem sua cobrinha ficar menor , você chegou no seu limite e morreu de desnutrição X_X');        
+		if (tailSize <= 0){
+			clearInterval(jogo);
+			alert('Laranjas fazem sua cobrinha ficar menor , você chegou no seu limite e morreu de desnutrição X_X');        
 		}
 	}
 
