@@ -9,7 +9,7 @@
 ### Features Adicionadas:
 
 * [Dark Mode](https://www.w3schools.com/Jsref/met_element_addeventlistener.asp)
-* [Contador do Tamanho da Cobra](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/pop)
+* [Scoreboard](https://developer.mozilla.org/pt-BR/docs/Web/API/Element/innerHTML)
 * [Restart Game Button](https://www.w3schools.com/jsref/event_onclick.asp)
 * [Duas Novas Frutas](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/push)
 
