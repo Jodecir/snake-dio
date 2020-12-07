@@ -120,6 +120,7 @@ function startGame(){
 			snake.pop();
 			tailSize--;
 			document.getElementById("tailSize").innerHTML = "Metros da Pitón: " + tailSize;
+			par = par - 2;
 		}
 	}
 	else {
