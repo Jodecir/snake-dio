@@ -1,6 +1,6 @@
 # Descrição do Exercício
 
-#### Repositório da aula de JS ensinada na plataforma da Digital Innovation One, cujo desafio era criar um jogo Snake, o ultimo desafio do Bootcamp da DIO.
+Repositório da aula de JS ensinada na plataforma da Digital Innovation One, cujo desafio era criar um jogo Snake, o ultimo desafio do Bootcamp da DIO.
 
 ## Bootcamp
 
@@ -28,10 +28,12 @@
 
 ### Recursos CSS:
 
+* [@font-face](https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face)
 * [transition](https://www.w3schools.com/css/css3_transitions.asp)
 * [transform](https://www.w3schools.com/cssref/css3_pr_transform.asp)
 * [@media](https://developer.mozilla.org/pt-BR/docs/Web/CSS/@media)
 * [nth-child](https://www.w3schools.com/cssref/sel_nth-child.asp)
+* [:checked](https://developer.mozilla.org/pt-BR/docs/Web/CSS/:checked)
 
 #### Contatos:
 
