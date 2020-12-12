@@ -3,12 +3,27 @@
 	src:url(../fonts/Snake-Chan.ttf);
 }
 
+:root {
+	--preto: #000000;
+  --pretoAlways: #000000;
+  --branco: #ffffff;
+  --verdeEscuro: #2f6f37;
+}
+
+.dark:root {
+  --preto: #ffffff;
+  --pretoAlways: #000000;
+  --branco: #000000;
+  --verdeEscuro: #2f6f37e3;
+}
+
 body {	
   display: flex;
 	justify-content: center;
   align-items: center;
-  font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  color: #2f6f37	
+	font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	background-color: var(--branco);
+  color: var(--verdeEscuro);
 }
 
 .container {
@@ -28,8 +43,8 @@ body {
 }
 
 canvas{
-	background:black;
-	border: 5px double #2f6f37;
+	background: var(--pretoAlways);
+	border: 5px double var(--verdeEscuro);
 }
 
 .hud {
@@ -96,7 +111,7 @@ ul {
 #restart {
 	display: flex;
 	align-items: center;
-	background-color: #111;
+	background-color: var(--pretoAlways);
 	border-radius: 10px;
 	cursor: pointer;
 	height: 32px;
@@ -104,7 +119,7 @@ ul {
 }
 
 .fa-redo {
-	color: #2f6f37;
+	color: var(--verdeEscuro);
 }
 
 /* Dark Mode Feature */ 
@@ -126,7 +141,7 @@ ul {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	background-color: #111;
+	background-color: var(--preto);
 	border-radius: 50px;
 	cursor: pointer;
 	position: relative;
@@ -137,7 +152,7 @@ ul {
 }
 
 .label .ball {
-	background-color: #fff;
+	background-color: var(--branco);
 	border-radius: 50%;
 	position: absolute;
 	top: 2px;
@@ -153,13 +168,9 @@ ul {
 }
 
 .fa-moon {
-	color: #0095f6;
+	color: var(--branco);
 }
 
 .fa-sun {
-	color: #f39c12;
-}
-
-body.dark {
-	background: #000000;
+	color: var(--branco);
 }
