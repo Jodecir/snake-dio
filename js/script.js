@@ -94,8 +94,11 @@ function startGame(){
 	backgroundCreate();
 	createHead();
 	drawApple();
-	drawOrange();
 	drawBanana();
+
+	if (tailSize >= 2) {
+		drawOrange();
+	}
 
 	let snakeX = snake[0].x;
 	let snakeY = snake[0].y;
@@ -140,7 +143,8 @@ function startGame(){
 	if(tailSize == par) {
 		banana.x = Math.floor(Math.random() * 15 + 1) * box;
 		banana.y = Math.floor(Math.random() * 15 + 1) * box; 
-		par = par + 2;	
+		par = par + 2;
+		impar = impar + 2;
 	} else {}
 	
 	if(tailSize == impar) {
