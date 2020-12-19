@@ -94,11 +94,8 @@ function startGame(){
 	backgroundCreate();
 	createHead();
 	drawApple();
+	drawOrange();
 	drawBanana();
-
-	if (tailSize >= 2) {
-		drawOrange();
-	}
 
 	let snakeX = snake[0].x;
 	let snakeY = snake[0].y;
@@ -112,8 +109,7 @@ function startGame(){
 			snake.pop();
 		if(snakeX != orange.x || snakeY != orange.y){			
 			if(snakeX != banana.x || snakeY != banana.y){	
-			}
-			else {
+			} else {
 				banana.x = Math.floor(Math.random() * 15 + 1) * box;
 				banana.y = Math.floor(Math.random() * 15 + 1) * box;
 				snake.push(8); 
@@ -122,8 +118,7 @@ function startGame(){
 				tailSize++;
 				document.getElementById("tailSize").innerHTML = "Metros da Pitón: " + tailSize;
 			}
-		}	
-		else { 
+		}	else { 
 			orange.x = Math.floor(Math.random() * 15 + 1) * box;
 			orange.y = Math.floor(Math.random() * 15 + 1) * box; 
 			snake.pop();
@@ -131,8 +126,7 @@ function startGame(){
 			document.getElementById("tailSize").innerHTML = "Metros da Pitón: " + tailSize;
 			par = par - 1;
 		}
-	}
-	else {
+	} else {
 		appleBiteSound.play();
 		apple.x = Math.floor(Math.random() * 15 + 1) * box;
 		apple.y = Math.floor(Math.random() * 15 + 1) * box; 
