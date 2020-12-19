@@ -3,6 +3,7 @@ let context = canvas.getContext("2d");
 let box = 32;
 let tailSize = 1;
 
+let impar = 3;
 let par = 2;
 
 let appleBiteSound=document.getElementById("appleBiteSound");
@@ -110,9 +111,9 @@ function startGame(){
 			if(snakeX != banana.x || snakeY != banana.y){	
 			}
 			else {
-				snake.push(8);
 				banana.x = Math.floor(Math.random() * 15 + 1) * box;
-				banana.y = Math.floor(Math.random() * 15 + 1) * box; 
+				banana.y = Math.floor(Math.random() * 15 + 1) * box;
+				snake.push(8); 
 				tailSize++;
 				snake.push(8);
 				tailSize++;
@@ -140,8 +141,13 @@ function startGame(){
 		banana.x = Math.floor(Math.random() * 15 + 1) * box;
 		banana.y = Math.floor(Math.random() * 15 + 1) * box; 
 		par = par + 2;	
-	} else {	
-	}
+	} else {}
+	
+	if(tailSize == impar) {
+		orange.x = Math.floor(Math.random() * 15 + 1) * box;
+		orange.y = Math.floor(Math.random() * 15 + 1) * box; 
+		impar = impar + 2;	
+	} else {}
 
 	let newHead = {
 		x: snakeX,
