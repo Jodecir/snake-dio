@@ -1,6 +1,6 @@
 @font-face {
-	font-family:Titulo;
-	src:url(../fonts/Snake-Chan.ttf);
+	font-family: Titulo;
+	src: url(../fonts/Snake-Chan.ttf);
 }
 
 :root {
@@ -75,7 +75,7 @@ ul {
  ul li {
   list-style: none;
 	font-size: 26px;
-	font-family:Titulo;
+	font-family: Titulo;
 	width: 0;
 	height: 0;
 	margin: 0 20px;
