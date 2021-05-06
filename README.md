@@ -29,11 +29,14 @@ Repositório da aula de JS ensinada na plataforma Digital Innovation One, cujo d
 ### Recursos CSS:
 
 * [@font-face](https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face)
+* [@media](https://developer.mozilla.org/pt-BR/docs/Web/CSS/@media)
+* [@keyframes](https://developer.mozilla.org/pt-BR/docs/Web/CSS/@keyframes)
+* [:root](https://www.w3schools.com/cssref/sel_root.asp)
+* [:nth-child](https://www.w3schools.com/cssref/sel_nth-child.asp)
+* [:checked](https://developer.mozilla.org/pt-BR/docs/Web/CSS/:checked)
 * [transition](https://www.w3schools.com/css/css3_transitions.asp)
 * [transform](https://www.w3schools.com/cssref/css3_pr_transform.asp)
-* [@media](https://developer.mozilla.org/pt-BR/docs/Web/CSS/@media)
-* [nth-child](https://www.w3schools.com/cssref/sel_nth-child.asp)
-* [:checked](https://developer.mozilla.org/pt-BR/docs/Web/CSS/:checked)
+* [opacity](https://www.w3schools.com/css/css_image_transparency.asp)
 
 #### Contatos:
 

@@ -116,14 +116,14 @@ function startGame(){
 				tailSize++;
 				snake.push(8);
 				tailSize++;
-				document.getElementById("tailSize").innerHTML = "Metros da Pitón: " + tailSize;
+				document.getElementById("tailSize").innerHTML = "Size: " + tailSize;
 			}
 		}	else { 
 			orange.x = Math.floor(Math.random() * 15 + 1) * box;
 			orange.y = Math.floor(Math.random() * 15 + 1) * box; 
 			snake.pop();
 			tailSize--;
-			document.getElementById("tailSize").innerHTML = "Metros da Pitón: " + tailSize;
+			document.getElementById("tailSize").innerHTML = "Size: " + tailSize;
 			par = par - 1;
 		}
 	} else {
@@ -131,7 +131,7 @@ function startGame(){
 		apple.x = Math.floor(Math.random() * 15 + 1) * box;
 		apple.y = Math.floor(Math.random() * 15 + 1) * box; 
 		tailSize++;
-		document.getElementById("tailSize").innerHTML = "Metros da Pitón: " + tailSize;
+		document.getElementById("tailSize").innerHTML = "Size: " + tailSize;
 	}
 
 	if(tailSize == par) {

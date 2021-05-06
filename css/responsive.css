@@ -1,6 +1,6 @@
 @media (max-width: 1024px) {
-  .container {
-    width: 90%;
+  .game-wrapper {
+    width: 100%;
   }
 }
 
@@ -9,15 +9,11 @@
 		background-color: #ffffff;
 	}
 
-	.container {
-		width: 90%;
-	}
-
 	.hud {
 		display: none;
 	}
 
-	.screen {
+	.game-container {
 		width: 100%;
 	}
 
